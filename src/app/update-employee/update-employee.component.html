@@ -1,0 +1,27 @@
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <h3 class="text-center mb-4">Update Employee</h3>
+            <form (ngSubmit)="onSubmit()">
+                <div class="form-group mb-3">
+                    <label for="firstName" class="form-label">First Name</label>
+                    <input type="text" id="firstName" [(ngModel)]="employee.firstName" name="firstName"
+                        class="form-control" required>
+                </div>
+                <div class="form-group mb-3">
+                    <label for="lastName" class="form-label">Last Name</label>
+                    <input type="text" id="lastName" [(ngModel)]="employee.lastName" name="lastName"
+                        class="form-control" required>
+                </div>
+                <div class="form-group mb-4">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" id="email" [(ngModel)]="employee.email" name="email" class="form-control"
+                        required>
+                </div>
+                <div class="d-grid">
+                    <button type="submit" class="btn btn-success">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

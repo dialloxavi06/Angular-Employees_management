@@ -1,0 +1,19 @@
+<div class="galerie-container">
+    <h2>Employee Galery</h2>
+
+    <!-- Section de la caméra -->
+    <div class="camera-section">
+        <video #video autoplay></video>
+        <button type="button" (click)="capture()">Prendre une photo</button>
+    </div>
+
+    <!-- Canvas caché pour capturer l'image -->
+    <canvas #canvas hidden></canvas>
+
+    <!-- Galerie de photos -->
+    <div class="photo-grid">
+        <div *ngFor="let photo of photos" class="photo-item">
+            <img [src]="photo.url" alt="Photo de l'employé">
+        </div>
+    </div>
+</div>

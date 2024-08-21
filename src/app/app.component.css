@@ -1,0 +1,23 @@
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+
+}
+
+/* Exemple de styles pour la barre de navigation */
+.navbar {
+    position: relative;
+    z-index: 1000;
+    /* Assurez-vous que la barre de navigation est au-dessus des autres éléments */
+}
+
+.nav-link {
+    pointer-events: auto;
+    /* Assurez-vous que les liens peuvent être cliqués */
+}
